@@ -12,13 +12,25 @@
  * @param {number[]} nums
  * @param {number} target
  * @return {number[]}
- */
+*/
 
 var nums = [2, 7, 11, 15];
 var target = 9;
 
-console.log(nums);
-
 var twoSum = function(nums, target) {
-    
+
+    const d={};
+
+    for (let i =0; i < nums.length; i++){
+        const another = target - nums[i];
+
+        if (another in d) {
+            return [d[another], i];
+        }
+
+        d[nums[i]] = i;
+    }
+    return null;
 };
+
+twoSum(nums, target);
