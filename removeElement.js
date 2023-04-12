@@ -14,7 +14,7 @@ var removeElement = function(nums, val) {
             nums[k++] = nums[i];
         }
     }
-    return k, nums;
+    return k;
 };
 
 const k = removeElement(nums, val);
