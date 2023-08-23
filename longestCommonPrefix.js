@@ -21,3 +21,8 @@ console.log(array[0].indexOf("flower"));
 
 // Substring elimina los caracteres de un string dado el rango
 console.log(array[0].substring(0, array[0].length -1));
+
+// slice sirve para recortar un string o array, retorna el
+// string o array copiado sin los caracteres recortados
+console.log(strs.slice(0, 1))
+console.log(strs[0].slice(0,4))
