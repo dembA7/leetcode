@@ -3,9 +3,9 @@
  * @return {number[]}
  */
 var plusOne = function(digits) {
-    const n = digits.length;
+    const n = digits.length - 1;
   
-    for (let i = n - 1; i >= 0; i--) {
+    for (let i = n; i >= 0; i--) {
       digits[i]++;
       
       if (digits[i] === 10) {
@@ -20,5 +20,5 @@ var plusOne = function(digits) {
     return digits;
 };
 
-let digits = [1, 2, 3];
+let digits = [9, 9, 9];
 console.log(plusOne(digits));
